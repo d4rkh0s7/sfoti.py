@@ -8,3 +8,5 @@ class Album(models.Model):
     artist = models.ForeignKey(Artist) #Esto referencia a la tabla artista de la base de datos
 
 # Create your models here.
+    def __unicode__(self):
+        return self.title
